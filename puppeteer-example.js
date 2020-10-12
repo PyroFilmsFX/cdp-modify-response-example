@@ -53,7 +53,7 @@ const puppeteer = require('puppeteer');
       // Adding 'content-disposition: attachment' header will tell the browser to download the file instead of opening it in using built-in viewer
       responseHeaders.push({
         name: 'content-disposition',
-        value: 'attachment',
+        value: 'attachment; filename=myFileName.ext',
       });
 
       /*
